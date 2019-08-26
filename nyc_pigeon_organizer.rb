@@ -4,11 +4,11 @@ def nyc_pigeon_organizer(data)
     value.each do |key2, value2|
       value2.each do |names|
         
-        if !data2[names]
+        if data2[names]==nil
           data2[names] = {}
         end
 
-        if !data2[names][key]
+        if data2[names][key]==nil
           data2[names][key] = []
         end
 
