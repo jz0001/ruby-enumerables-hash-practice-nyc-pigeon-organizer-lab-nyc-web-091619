@@ -4,15 +4,15 @@ def nyc_pigeon_organizer(data)
     value.each do |key2, value2|
       value2.each do |names|
         
-        if !data2[element]
-          data2[element] = {}
+        if !data2[names]
+          data2[names] = {}
         end
 
-        if !data2[element][key]
-          data2[element][key] = []
+        if !data2[names][key]
+          data2[names][key] = []
         end
 
-        data2[element][key].push(key2.to_s)
+        data2[names][key].push(key2.to_s)
 
       end
     end
